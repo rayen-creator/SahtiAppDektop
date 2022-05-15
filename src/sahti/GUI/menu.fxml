@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="757.0" prefWidth="948.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.MenuController">
+   <children>
+      <ImageView fitHeight="757.0" fitWidth="1172.0">
+         <image>
+            <Image url="@../Img/BGIMG_1.png" />
+         </image>
+      </ImageView>
+      <BorderPane layoutY="-1.0" prefHeight="757.0" prefWidth="1172.0">
+         <left>
+            <VBox fx:id="vbox" prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER" />
+         </left>
+         <center>
+            <ScrollPane fx:id="scroll" maxWidth="910.0" prefHeight="757.0" prefWidth="600.0" BorderPane.alignment="CENTER_RIGHT">
+              <content>
+                <AnchorPane fx:id="idanchorpane" />
+              </content>
+            </ScrollPane>
+         </center>
+      </BorderPane>
+      <ImageView fitHeight="757.0" fitWidth="263.0">
+         <image>
+            <Image url="@../Img/Path%209.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="453.0" fitWidth="263.0" layoutX="-1.0" layoutY="234.0">
+         <image>
+            <Image url="@../Img/Rectangle%2030.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="199.0" fitWidth="193.0" layoutX="28.0" layoutY="-17.0">
+         <image>
+            <Image url="@../Img/SAHTI%20without%20bg.png" />
+         </image>
+      </ImageView>
+      <ImageView layoutX="84.0" layoutY="236.0">
+         <image>
+            <Image url="@../Img/Menu.png" />
+         </image>
+      </ImageView>
+      <Button layoutX="28.0" layoutY="308.0" mnemonicParsing="false" onAction="#idbtn" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Admin Panel">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font></Button>
+      <Button fx:id="logout" layoutX="134.0" layoutY="190.0" mnemonicParsing="false" onAction="#idlogout" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #E9CE20, #756710);" text="Logout">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="idusername" layoutX="82.0" layoutY="161.0" prefHeight="21.0" prefWidth="101.0" text="Label" textAlignment="RIGHT" />
+      <Button fx:id="EditProfile" layoutX="29.0" layoutY="190.0" mnemonicParsing="false" onAction="#EditProfile" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #E9CE20, #756710);" text="Edit Profile">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="348.0" mnemonicParsing="false" onAction="#gererProd" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Gestion des produits">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="30.0" layoutY="388.0" mnemonicParsing="false" onAction="#gererCat" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Gestions des categories">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="430.0" mnemonicParsing="false" onAction="#addReclamation" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Ajouter réclamation">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="473.0" mnemonicParsing="false" onAction="#consulterReclamation" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consoluter réclamation">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="31.0" layoutY="515.0" mnemonicParsing="false" onAction="#consulterAvis" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter avis">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="29.0" layoutY="558.0" mnemonicParsing="false" onAction="#listCmd" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Liste des commandes">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font>
+      </Button>
+      <Button layoutX="29.0" layoutY="599.0" mnemonicParsing="false" onAction="#listLvr" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Liste des livraisons">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

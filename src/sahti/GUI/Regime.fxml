@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxWidth="910.0" prefHeight="757.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.RegimeController">
+   <children>
+      <ImageView fitHeight="757.0" fitWidth="935.0">
+         <image>
+            <Image url="@../../img/Img/BGIMG_Nourchen.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="746.0" fitWidth="935.0">
+         <image>
+            <Image url="@../../img/Img/Rectangle_Nourchen.png" />
+         </image>
+      </ImageView>
+      <VBox fx:id="idvboxright" alignment="CENTER" layoutX="6.0" layoutY="154.0" prefHeight="310.0" prefWidth="111.0" spacing="21.0">
+         <children>
+            <Label prefHeight="17.0" prefWidth="77.0" text=" Regime">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label prefHeight="16.0" prefWidth="61.0" text="Objectif">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Date Début">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Max Calories">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Durée">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Nbre de Repas">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="14.0" />
+               </font>
+            </Label>
+            <Label text="Specialiste">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnupload" mnemonicParsing="false" onAction="#UPLOADiMAGE" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04); -fx-background-radius: 30;" text="Upload">
+               <font>
+                  <Font name="Trebuchet MS Bold" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+      <VBox fx:id="idvboxleft" alignment="CENTER" layoutX="118.0" layoutY="146.0" prefHeight="326.0" prefWidth="172.0" spacing="9.0">
+         <children>
+            <TextField fx:id="tfregime" prefHeight="11.0" prefWidth="192.0" promptText="Regime" />
+            <VBox alignment="CENTER" prefHeight="64.0" prefWidth="198.0">
+               <children>
+                  <RadioButton fx:id="gagner" mnemonicParsing="false" onAction="#GagnerPoids" text="Gagner du Poids " />
+                  <RadioButton fx:id="perd" mnemonicParsing="false" onAction="#PerdrePoids" text="Perdre du Poids">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </RadioButton>
+                  <RadioButton fx:id="maint" mnemonicParsing="false" onAction="#MaintenirPoids" prefHeight="18.0" prefWidth="117.0" text="Maintenir le Poids" />
+                  <DatePicker fx:id="tfdate" prefHeight="25.0" prefWidth="140.0" />
+               </children>
+            </VBox>
+            <TextField fx:id="tfcalorie" prefHeight="25.0" prefWidth="140.0" promptText="Max calories" />
+            <TextField fx:id="tfduree" prefHeight="25.0" prefWidth="140.0" promptText="Durée" />
+            <TextField fx:id="tfrepas" prefHeight="25.0" prefWidth="140.0" promptText="Nmbre de repas" />
+            <TextField fx:id="tfspec" prefHeight="25.0" prefWidth="140.0" promptText="Specila" />
+            <TextArea fx:id="photo_p" prefHeight="38.0" prefWidth="156.0" />
+         </children>
+      </VBox>
+      <Button fx:id="bntajouter" layoutX="24.0" layoutY="622.0" mnemonicParsing="false" onAction="#AjouterRegime" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04); -fx-background-radius: 30;" text="Ajouter " textAlignment="CENTER">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="gsupp" layoutX="239.0" layoutY="622.0" mnemonicParsing="false" onAction="#supprimerRegime" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%,#EF2B2B, #781616); -fx-background-radius: 30;" text="Supprimer">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btnmodifier" layoutX="129.0" layoutY="622.0" mnemonicParsing="false" onAction="#ModifierRegime" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #E9CE20, #756710); -fx-background-radius: 30;" text="Modifier">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <TableView fx:id="tbv" layoutX="310.0" layoutY="179.0" onMouseClicked="#HandleMouseAction" prefHeight="183.0" prefWidth="611.0">
+        <columns>
+          <TableColumn fx:id="reg" text=" Regime" />
+          <TableColumn fx:id="obj" prefWidth="65.0" text="Objectif" />
+            <TableColumn fx:id="dd" prefWidth="84.0" text="Date Debut " />
+            <TableColumn fx:id="d" prefWidth="57.0" text="Durée" />
+            <TableColumn fx:id="c" prefWidth="68.0" text="Calories" />
+            <TableColumn fx:id="nr" prefWidth="104.0" text="Nombre Repas" />
+            <TableColumn fx:id="spec" prefWidth="89.0" text="Specialiste" />
+            <TableColumn fx:id="im" prefWidth="69.0" text="Image" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tab_rep" layoutX="475.0" layoutY="435.0" onMouseClicked="#HandleMouseAction2" prefHeight="200.0" prefWidth="404.0">
+        <columns>
+          <TableColumn fx:id="id_rep" prefWidth="68.0" text="Numéro" />
+          <TableColumn fx:id="nom_rep" prefWidth="94.0" text="Nom Repas" />
+            <TableColumn fx:id="nbre_cal" prefWidth="154.0" text="Nombre de Calories" />
+            <TableColumn fx:id="quant" prefWidth="95.0" text="Quantité" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_Aff" layoutX="758.0" layoutY="648.0" mnemonicParsing="false" onAction="#bouton_Aff" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04); -fx-background-radius: 30;" text="Affecter">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <ComboBox fx:id="gComboBox" editable="true" layoutX="400.0" layoutY="142.0" prefWidth="150.0" promptText="          Regime " style="-fx-background-color: #92FC07;" />
+      <ImageView fx:id="photo_view" fitHeight="111.0" fitWidth="156.0" layoutX="83.0" layoutY="493.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="BtnStat" layoutX="534.0" layoutY="387.0" mnemonicParsing="false" onAction="#StatAction" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04); -fx-background-radius: 30;" text="Stat">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <Button layoutX="43.0" layoutY="690.0" mnemonicParsing="false" onAction="#menu" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04); -fx-background-radius: 30;" text="Interface Repas">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="export" layoutX="767.0" layoutY="387.0" mnemonicParsing="false" onAction="#printevent" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04); -fx-background-radius: 30;" text="Imprimer Regime">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <Button alignment="CENTER" layoutX="634.0" layoutY="387.0" mnemonicParsing="false" onAction="#IMC" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04); -fx-background-radius: 30;" text="Calcul IMC" textAlignment="CENTER">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="70.0" fitWidth="71.0" layoutX="838.0" layoutY="18.0">
+         <image>
+            <Image url="@../../img/Img/SAHTI%20without%20bg_Nourchen.png" />
+         </image>
+      </ImageView>
+      <ComboBox fx:id="boxEmail" editable="true" layoutX="711.0" layoutY="142.0" prefHeight="25.0" prefWidth="182.0" promptText="Email de client" style="-fx-background-color: #92FC07;" />
+      <Text layoutX="290.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Interface Regime" textAlignment="CENTER">
+         <font>
+            <Font name="Trebuchet MS Bold" size="30.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" minWidth="514.0" prefHeight="580.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.DetailProdController">
+   <children>
+      <BorderPane prefHeight="580.0" prefWidth="750.0">
+         <center>
+            <ImageView fx:id="img" fitHeight="412.0" fitWidth="333.0" pickOnBounds="true" preserveRatio="true" BorderPane.alignment="CENTER_LEFT" />
+         </center>
+         <right>
+            <VBox alignment="CENTER" prefHeight="514.0" prefWidth="369.0" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="30.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="prodnom" text="name" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="109.0" prefWidth="270.0">
+                     <children>
+                        <VBox prefHeight="102.0" prefWidth="98.0">
+                           <children>
+                              <Label text="Prix:" />
+                              <Label text="Quantité:">
+                                 <VBox.margin>
+                                    <Insets top="40.0" />
+                                 </VBox.margin>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="73.0" prefWidth="182.0">
+                           <children>
+                              <HBox prefHeight="53.0" prefWidth="182.0">
+                                 <children>
+                                    <Label fx:id="prixprod" text="Label">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                 </children>
+                              </HBox>
+                              <HBox prefHeight="55.0" prefWidth="182.0">
+                                 <children>
+                                    <Button fx:id="btnmoin" mnemonicParsing="false" onAction="#decrementQte" text="-">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Label fx:id="lblqte" text="Label">
+                                       <HBox.margin>
+                                          <Insets left="10.0" top="5.0" />
+                                       </HBox.margin>
+                                    </Label>
+                                    <Button fx:id="btnplus" mnemonicParsing="false" onAction="#incrementQte" text="+">
+                                       <HBox.margin>
+                                          <Insets left="10.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="21.0" prefWidth="270.0">
+                     <children>
+                        <Label text="Description:" />
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="84.0" prefWidth="369.0">
+                     <children>
+                        <Label fx:id="descprod" text="Label">
+                           <HBox.margin>
+                              <Insets left="10.0" top="5.0" />
+                           </HBox.margin>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="32.0" prefWidth="369.0">
+                     <children>
+                        <Button fx:id="btnajoutpanier" mnemonicParsing="false" onAction="#ajoutpanier" prefHeight="31.0" prefWidth="144.0" text="Ajouter Au Panier">
+                           <HBox.margin>
+                              <Insets left="10.0" />
+                           </HBox.margin>
+                        </Button>
+                        <Button fx:id="topanier" mnemonicParsing="false" onAction="#topanier" prefHeight="25.0" prefWidth="123.0" text="Ouvrir Panier">
+                           <HBox.margin>
+                              <Insets left="100.0" />
+                           </HBox.margin>
+                        </Button>
+                     </children>
+                  </HBox>
+                  <HBox fx:id="avisEspace" prefHeight="85.0" prefWidth="369.0">
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </HBox>
+                  <ScrollPane fx:id="scroll" prefHeight="175.0" prefWidth="369.0">
+                     <VBox.margin>
+                        <Insets top="5.0" />
+                     </VBox.margin>
+                  </ScrollPane>
+               </children>
+               <BorderPane.margin>
+                  <Insets />
+               </BorderPane.margin>
+            </VBox>
+         </right>
+      </BorderPane>
+   </children>
+</AnchorPane>

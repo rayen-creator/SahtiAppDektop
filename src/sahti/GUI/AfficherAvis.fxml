@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="860.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.AfficherAvisController">
+   <children>
+      <ImageView fitHeight="708.0" fitWidth="860.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/BGIMG_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="584.0" fitWidth="769.0" layoutX="46.0" layoutY="93.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/Rectangle_Iheb.png" />
+         </image>
+      </ImageView>
+      <Rating fx:id="rating" layoutX="343.0" layoutY="410.0" prefHeight="32.0" prefWidth="273.0" rating="0" />
+      <ImageView fx:id="imgViewer" fitHeight="150.0" fitWidth="200.0" layoutX="331.0" layoutY="221.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="90.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avis">
+         <font>
+            <Font size="24.0" />
+         </font></Text>
+      <Label fx:id="lblCommentaire" layoutX="90.0" layoutY="503.0" text="Commentaire ici" />
+      <Label fx:id="lblNom" layoutX="343.0" layoutY="378.0" text="NomCoach/nut../Pr.." />
+      <Label fx:id="lblUser" layoutX="198.0" layoutY="154.0" text="Coach/Nutritionniste/Produit" />
+      <ImageView fitHeight="107.0" fitWidth="100.0" layoutX="677.0" layoutY="106.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Img/SAHTI%20without%20bg_Iheb.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

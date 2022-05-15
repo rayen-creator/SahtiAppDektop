@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="547.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.EnvoyerMailController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="548.0">
+         <image>
+            <Image url="@../Img/BGIMG_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="400.0" fitWidth="535.0">
+         <image>
+            <Image url="@../Img/Rectangle%209.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="227.0" layoutY="29.0" prefHeight="27.0" prefWidth="191.0" text="formulaire mail">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="122.0" text="Tirte de promotion:" />
+      <Label layoutX="25.0" layoutY="243.0" text="Message du mail:" />
+      <TextField fx:id="txttitre" layoutX="187.0" layoutY="120.0" style="-fx-background-radius: 30;" />
+      <Button fx:id="btnmail" layoutX="221.0" layoutY="343.0" mnemonicParsing="false" onAction="#SendMail" prefHeight="25.0" prefWidth="111.0" style="-fx-background-color: #92FC07; -fx-background-radius: 30;" text="Envoyer Mail" />
+      <TextArea fx:id="txtmsg" layoutX="154.0" layoutY="187.0" prefHeight="136.0" prefWidth="355.0" />
+      <ImageView fitHeight="73.0" fitWidth="82.0" layoutX="25.0" layoutY="20.0">
+         <image>
+            <Image url="@../Img/SAHTI%20without%20bg.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

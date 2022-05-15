@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" minWidth="150.0" onMousePressed="#click" prefHeight="175.0" prefWidth="178.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.ProduitController">
+   <children>
+      <ImageView fitHeight="175.0" fitWidth="178.0" layoutX="2.0">
+         <image>
+            <Image url="@../../img/Img/Rectangle_Iheb.png" />
+         </image>
+      </ImageView>
+      <VBox alignment="TOP_CENTER" layoutX="3.0" prefHeight="175.0" prefWidth="178.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="34.0" prefWidth="147.0">
+               <children>
+                  <Label fx:id="nameLabel" text="Label">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Trebuchet MS Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <ImageView fx:id="img" fitHeight="112.0" fitWidth="163.0" pickOnBounds="true" preserveRatio="true">
+               <VBox.margin>
+                  <Insets right="5.0" />
+               </VBox.margin></ImageView>
+            <HBox alignment="CENTER" prefHeight="28.0" prefWidth="178.0">
+               <children>
+                  <Label fx:id="priceLable" text="Label">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

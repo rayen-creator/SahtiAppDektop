@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxWidth="910.0" prefHeight="757.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.STATController">
+   <children>
+      <ImageView fitHeight="757.0" fitWidth="744.0">
+         <image>
+            <Image url="@../../img/Img/BGIMG_Nourchen.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="435.0" fitWidth="709.0" layoutX="14.0" layoutY="126.0">
+         <image>
+            <Image url="@../../img/Img/Rectangle_Nourchen.png" />
+         </image>
+      </ImageView>
+      <PieChart fx:id="stat" layoutX="56.0" layoutY="232.0" prefHeight="249.0" prefWidth="255.0" />
+      <LineChart fx:id="statcourbe" layoutX="369.0" layoutY="219.0" prefHeight="274.0" prefWidth="317.0">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <Button layoutX="37.0" layoutY="502.0" mnemonicParsing="false" onAction="#menu" prefHeight="26.0" prefWidth="75.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04); -fx-background-radius: 30;" text="Retour">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <Text layoutX="215.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Les Statistiques" textAlignment="CENTER">
+         <font>
+            <Font name="Trebuchet MS Bold" size="36.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="69.0" fitWidth="75.0" layoutX="623.0" layoutY="149.0">
+         <image>
+            <Image url="@../../img/Img/SAHTI%20without%20bg_Nourchen.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="311.0" layoutY="314.0" style="-fx-rotate: -90;" text="Objectif">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="528.0" layoutY="505.0" text="Regime">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

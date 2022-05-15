@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" maxWidth="910.0" prefHeight="757.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.AfficherCommandesController">
+   <children>
+      <ImageView fitHeight="757.0" fitWidth="1539.0" layoutX="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/BGIMG_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="714.0" fitWidth="1514.0" layoutX="12.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/Rectangle_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="80.0" fitWidth="67.0" layoutX="1381.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Img/SAHTI%20without%20bg_Iheb.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtRecherche" layoutX="360.0" layoutY="152.0" promptText="Rechercher" style="-fx-background-radius: 30;" />
+      <Button fx:id="btnRechercher" layoutX="615.0" layoutY="112.0" mnemonicParsing="false" onAction="#rechercherCommande" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04); -fx-background-radius: 30;" text="Rechercher">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <TableView fx:id="table" layoutX="47.0" layoutY="202.0" onMouseClicked="#getDetailCmd" prefHeight="367.0" prefWidth="643.0">
+        <columns>
+          <TableColumn fx:id="colId" minWidth="0.0" prefWidth="0.0" text="Id" visible="false" />
+          <TableColumn fx:id="colClient" prefWidth="138.0" text="Client" />
+            <TableColumn fx:id="colNumCmd" prefWidth="121.00003051757812" text="Numéro Commande" />
+            <TableColumn fx:id="colMntCmd" prefWidth="134.0" text="Montant commande" />
+            <TableColumn fx:id="colEtatCmd" prefWidth="145.0" text="Etat commande" />
+            <TableColumn fx:id="colDateCmd" prefWidth="103.0" text="Date commande" />
+        </columns>
+      </TableView>
+      <Text layoutX="300.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" text=" liste des commandes" textAlignment="CENTER">
+         <font>
+            <Font name="Trebuchet MS Bold" size="30.0" />
+         </font></Text>
+      <Label fx:id="aClient" layoutX="711.0" layoutY="243.0" text="Client:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="anumCmd" layoutX="711.0" layoutY="276.0" text="Numéro Commande:">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="amnt" layoutX="711.0" layoutY="318.0" text="Montant commande:">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="aComment" layoutX="714.0" layoutY="355.0" text="Commentaire:">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="aDate" layoutX="714.0" layoutY="427.0" text="Date commande:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="aEtat" layoutX="716.0" layoutY="386.0" text="Etat commande:">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblClient" layoutX="778.0" layoutY="245.0" prefHeight="16.0" prefWidth="67.0">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblNumcommande" layoutX="872.0" layoutY="276.0" prefHeight="16.0" prefWidth="42.0">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblEtatCmd" layoutX="845.0" layoutY="381.0" prefHeight="30.0" prefWidth="149.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblMntCmd" layoutX="947.0" layoutY="318.0">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDateCmd" layoutX="841.0" layoutY="422.0" prefHeight="30.0" prefWidth="107.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Text fx:id="lblCommentCmd" layoutX="833.0" layoutY="371.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="228.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblDT" layoutX="903.0" layoutY="311.0" text="DT">
+         <font>
+            <Font name="System Bold" size="11.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRefresh" layoutX="826.0" layoutY="164.0" mnemonicParsing="false" onAction="#refrechTable" style="-fx-background-color: #92FC07;" text="Actualiser" />
+   </children>
+</AnchorPane>

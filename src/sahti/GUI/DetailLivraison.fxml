@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="563.0" prefWidth="766.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.DetailLivraisonController">
+   <children>
+      <ImageView fitHeight="659.0" fitWidth="766.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/BGIMG_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="598.0" fitWidth="687.0" layoutX="39.0" layoutY="32.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Img/Rectangle_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="54.0" fitWidth="79.0" layoutX="636.0" layoutY="50.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Img/SAHTI%20without%20bg_Iheb.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="83.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Details livraison">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Text>
+      <Text layoutX="122.0" layoutY="183.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commande numéro:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Text>
+      <Text layoutX="122.0" layoutY="229.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Commandé le :">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Text>
+      <Text layoutX="124.0" layoutY="287.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Client:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Text>
+      <Text layoutX="126.0" layoutY="336.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Adresse:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Text>
+      <Text layoutX="124.0" layoutY="386.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numéro de téléphone:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Text>
+      <Text layoutX="126.0" layoutY="438.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Etat de livraison:">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></Text>
+      <Text fx:id="lblNumCmd" layoutX="396.0" layoutY="177.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="287.6708984375" />
+      <Text fx:id="lblDateCmd" layoutX="396.0" layoutY="223.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="287.67090663313866" />
+      <Text fx:id="lblClient" layoutX="396.0" layoutY="271.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="287.67090663313866" />
+      <Text fx:id="lblAdresse" layoutX="396.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="287.67090663313866" />
+      <Text fx:id="lblNumTel" layoutX="396.0" layoutY="380.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="287.67090663313866" />
+      <Text fx:id="lblEtatLivraison" layoutX="396.0" layoutY="432.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="287.67090663313866" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="709.0" prefWidth="984.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.PanierController">
+   <children>
+      <ImageView fitHeight="709.0" fitWidth="995.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/BGIMG_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="683.0" fitWidth="939.0" layoutX="23.0" layoutY="13.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/Rectangle_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="86.0" fitWidth="77.0" layoutX="848.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Img/SAHTI%20without%20bg_Iheb.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="103.0" layoutY="110.0" prefHeight="71.0" prefWidth="177.0" text="Panier">
+         <font>
+            <Font name="System Bold" size="49.0" />
+         </font>
+      </Label>
+      <Pane layoutX="92.0" layoutY="191.0" prefHeight="449.0" prefWidth="802.0">
+         <children>
+            <ImageView fx:id="imgView" fitHeight="150.0" fitWidth="142.0" layoutY="65.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblNomProduit" layoutX="146.0" layoutY="76.0" text="Nom Produit">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblQte" layoutX="469.0" layoutY="90.0" text="Qte">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPrix" layoutX="609.0" layoutY="92.0" text="Prix">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="plusOne" layoutX="514.0" layoutY="92.0" mnemonicParsing="false" onAction="#incrementQte" text="+" />
+            <Button fx:id="minesOne" layoutX="429.0" layoutY="92.0" mnemonicParsing="false" onAction="#decrementQte" text="-" />
+            <Label layoutX="14.0" layoutY="14.0" text="Produit" underline="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="468.0" layoutY="14.0" text="Qte" underline="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="611.0" layoutY="14.0" text="Prix" underline="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="686.0" layoutY="14.0" text="Supprimer" underline="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnDelete" layoutX="720.0" layoutY="92.0" mnemonicParsing="false" onAction="#deleteProd" text="X" />
+            <Text fx:id="lblDescProduit" layoutX="146.0" layoutY="146.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description Produit" />
+            <Label fx:id="lblDT" layoutX="669.0" layoutY="97.0" text="DT">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblVide" alignment="CENTER" layoutX="292.0" layoutY="71.0" text="Panier Vide">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>             
+            </Label>
+            <Button layoutX="17.0" layoutY="281.0" mnemonicParsing="false" onAction="#addCart" text="Button" />
+         </children>
+      </Pane>
+      <Button fx:id="btnPasserCommande" layoutX="747.0" layoutY="130.0" mnemonicParsing="false" onAction="#commander" style="-fx-background-color: #92FC07;" text="PasserCommande" />
+   </children>
+</AnchorPane>

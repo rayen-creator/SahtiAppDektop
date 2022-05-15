@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="119.0" prefWidth="802.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.DetailProduitPanierController">
+   <children>
+      <ImageView fitHeight="129.0" fitWidth="802.0" layoutY="-1.0" pickOnBounds="true">
+         <image>
+            <Image url="file:/C:/Users/HP/Documents/NetBeansProjects/Sahti/Img/BGIMG_Acil.png" />
+         </image>
+      </ImageView>
+      <Pane prefHeight="129.0" prefWidth="802.0">
+         <children>
+            <ImageView fitHeight="117.0" fitWidth="802.0" layoutY="7.0">
+               <image>
+                  <Image url="file:/C:/Users/HP/Desktop/cour%20esprit/pi/Sahti/Img/Rectangle_Acil.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="imgView" fitHeight="92.0" fitWidth="99.0" layoutX="26.0" layoutY="16.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="lblNomProduit" layoutX="146.0" layoutY="18.0" text="Nom Produit">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblQte" layoutX="469.0" layoutY="32.0" text="Qte">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblPrix" layoutX="609.0" layoutY="34.0" text="Prix">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="plusOne" layoutX="515.0" layoutY="36.0" mnemonicParsing="false" onAction="#incrementQte" text="+">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Button fx:id="minesOne" layoutX="430.0" layoutY="36.0" mnemonicParsing="false" onAction="#decrementQte" text="-">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>          
+            <Label layoutX="14.0" layoutY="14.0" text="Produit" underline="true" visible="false">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="468.0" layoutY="14.0" text="Qte" underline="true" visible="false">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="611.0" layoutY="14.0" text="Prix" underline="true" visible="false">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="686.0" layoutY="14.0" text="Supprimer" underline="true" visible="false">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnDelete" layoutX="721.0" layoutY="37.0" mnemonicParsing="false" onAction="#deleteProd" text="X">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <Text fx:id="lblDescProduit" layoutX="146.0" layoutY="88.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Description Produit" />
+            <Label fx:id="lblDT" layoutX="669.0" layoutY="39.0" text="DT">
+               <font>
+                  <Font name="System Bold" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

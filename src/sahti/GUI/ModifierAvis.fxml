@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import org.controlsfx.control.Rating?>
+
+<AnchorPane id="AnchorPane" prefHeight="545.0" prefWidth="699.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.ModifierAvisController">
+   <children>
+      <ImageView fitHeight="545.0" fitWidth="699.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/BGIMG_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="507.0" fitWidth="705.0" layoutX="42.0" layoutY="24.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Img/Rectangle_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="82.0" fitWidth="73.0" layoutX="551.0" layoutY="46.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Img/SAHTI%20without%20bg_Iheb.png" />
+         </image>
+      </ImageView>
+      <Rating fx:id="rtProduit" layoutX="259.0" layoutY="245.0" prefHeight="32.0" prefWidth="273.0" rating="0.0" />
+      <ImageView fx:id="imgProduit" fitHeight="150.0" fitWidth="200.0" layoutX="247.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true" />
+      <Text layoutX="68.0" layoutY="307.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Avis" />
+      <TextArea fx:id="txtaComment" layoutX="75.0" layoutY="317.0" prefHeight="101.0" prefWidth="549.0" />
+      <Button fx:id="btnAnnuler" layoutX="483.0" layoutY="427.0" mnemonicParsing="false" style="-fx-background-color: #92FC07;" text="Annuler" />
+      <Button fx:id="btnModifier" layoutX="559.0" layoutY="427.0" mnemonicParsing="false" onAction="#updateAvis" style="-fx-background-color: #92FC07;" text="Modifer" />
+   </children>
+</AnchorPane>

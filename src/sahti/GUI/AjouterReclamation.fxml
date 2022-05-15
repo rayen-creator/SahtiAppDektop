@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="593.0" prefWidth="890.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.AjouterReclamationController">
+   
+   <children>
+      <ImageView fitHeight="603.0" fitWidth="890.0" layoutY="-8.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/BGIMG_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="408.0" fitWidth="760.0" layoutX="73.0" layoutY="96.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/Rectangle_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="111.0" fitWidth="93.0" layoutX="700.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Img/SAHTI%20without%20bg_Iheb.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="txtTitre" layoutX="214.0" layoutY="124.0" />
+      <Text layoutX="100.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Titre:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="101.0" layoutY="182.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Message:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <Text layoutX="101.0" layoutY="318.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <ComboBox fx:id="cmbType" layoutX="216.0" layoutY="296.0" prefHeight="31.0" prefWidth="187.0" />
+      <Button fx:id="btnValider" layoutX="698.0" layoutY="426.0" mnemonicParsing="false" onAction="#addReclamation" style="-fx-background-color: #92FC07;" text="Ajouter">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <Button fx:id="btnAnnuler" layoutX="592.0" layoutY="426.0" mnemonicParsing="false" style="-fx-background-color: #92FC07;" text="Annuler">
+         <font>
+            <Font size="21.0" />
+         </font></Button>
+      <ImageView fx:id="imgView" fitHeight="150.0" fitWidth="200.0" layoutX="593.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnPiece" layoutX="223.0" layoutY="351.0" mnemonicParsing="false" onAction="#UploadImageActionPerformed" style="-fx-background-color: #92FC07;" text="Choisissez image" />
+      <Text layoutX="101.0" layoutY="373.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Piece joint:">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font></Text>
+      <TextArea fx:id="txtMessage" layoutX="210.0" layoutY="163.0" prefHeight="111.0" prefWidth="370.0" />
+   </children>
+</AnchorPane>

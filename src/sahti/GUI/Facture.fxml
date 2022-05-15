@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+<?import javafx.scene.web.WebView?>
+
+<AnchorPane id="AnchorPane" prefHeight="921.0" prefWidth="716.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.FactureController">
+   <children>
+      <ImageView fitHeight="921.0" fitWidth="716.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/BGIMG_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="927.0" fitWidth="716.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/Rectangle_Iheb.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="27.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Facture" />
+      <WebView fx:id="viewFacture" layoutX="19.0" layoutY="91.0" prefHeight="795.0" prefWidth="678.0" />
+      <Button fx:id="btnEnregisterFacture" layoutX="550.0" layoutY="49.0" mnemonicParsing="false" onAction="#saveFacture" style="-fx-background-color: #92FC07;" text="Enregistrer facture" />
+   </children>
+</AnchorPane>

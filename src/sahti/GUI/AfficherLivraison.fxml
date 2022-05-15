@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="682.0" prefWidth="1172.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.AfficherLivraisonController">
+   <children>
+      <ImageView fitHeight="682.0" fitWidth="1172.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/BGIMG_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="567.0" fitWidth="1062.0" layoutX="103.0" layoutY="83.0" pickOnBounds="true">
+         <image>
+            <Image url="@../../img/Img/Rectangle_Iheb.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="68.0" fitWidth="74.0" layoutX="1048.0" layoutY="101.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../img/Img/SAHTI%20without%20bg_Iheb.png" />
+         </image>
+      </ImageView>
+      <Text layoutX="361.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Rechercher" />
+      <TextField fx:id="txtRecherche" layoutX="477.0" layoutY="119.0" />
+      <Button fx:id="btnRechercher" layoutX="675.0" layoutY="119.0" mnemonicParsing="false" style="-fx-background-color: #92FC07;" text="Rechercher" />
+      <TableView fx:id="table" layoutX="220.0" layoutY="213.0" onMouseClicked="#getSelectedLivraison" prefHeight="367.0" prefWidth="828.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="75.0" text="Id" />
+          <TableColumn fx:id="colClient" prefWidth="172.0" text="Client" />
+            <TableColumn fx:id="colNumCmd" prefWidth="175.0" text="Numéro commande" />
+            <TableColumn fx:id="colEtatLiv" prefWidth="209.0" text="Etat livraison" />
+            <TableColumn fx:id="colDateLiv" prefWidth="196.0" text="Date livraison" />
+        </columns>
+      </TableView>
+      <Text layoutX="230.0" layoutY="201.0" strokeType="OUTSIDE" strokeWidth="0.0" text="La liste des livraisons" />
+   </children>
+</AnchorPane>

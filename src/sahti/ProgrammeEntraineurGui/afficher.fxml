@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProgrammeEntraineurGui.AfficherController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0">
+         <image>
+            <Image url="@../../Img/BGIMG_Abdo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="900.0">
+         <image>
+            <Image url="@../Img/BGIMG_Abdo.png" />
+         </image>
+      </ImageView>
+      <TableView fx:id="table" layoutX="14.0" layoutY="48.0" prefHeight="500.0" prefWidth="871.0" style="-fx-background-color: #92FC07;">
+        <columns>
+          <TableColumn fx:id="cl_exercice_id" prefWidth="286.3999881744385" text="description Exercices" />
+          <TableColumn fx:id="cl_nom_pack" minWidth="0.0" prefWidth="293.6000671386719" text="nom pack" />
+            <TableColumn fx:id="cl_type" prefWidth="292.0" text="type" />
+            <TableColumn fx:id="cl_id" minWidth="0.0" prefWidth="0.0" text="id" />
+        </columns>
+      </TableView>
+      <Button fx:id="btn_retour" layoutX="837.0" layoutY="560.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="retour">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btn_ajouter" layoutX="435.0" layoutY="560.0" mnemonicParsing="false" onAction="#ajouter" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="ajouter">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <TextField fx:id="in_search" layoutX="108.0" layoutY="15.0" />
+      <Label layoutX="19.0" layoutY="18.0" text="rechercher:">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font></Label>
+      <ComboBox fx:id="triBox" layoutX="735.0" layoutY="15.0" onAction="#trier" prefWidth="150.0" promptText="trier par" />
+      <Button fx:id="btn_csv" layoutX="326.0" layoutY="560.0" mnemonicParsing="false" onAction="#csv" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="télécharger">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+   </children>
+</AnchorPane>

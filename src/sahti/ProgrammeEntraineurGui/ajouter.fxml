@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ProgrammeEntraineurGui.AjouterController">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="900.0">
+         <image>
+            <Image url="@../Img/BGIMG_Abdo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="429.0" fitWidth="534.0" layoutX="199.0" layoutY="46.0">
+         <image>
+            <Image url="@../Img/Rectangle_Abdo.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="600.0" fitWidth="900.0" />
+      <ImageView fitHeight="429.0" fitWidth="631.0" layoutX="168.0" layoutY="46.0" />
+      <TextField fx:id="in_nomPack" layoutX="458.0" layoutY="106.0" />
+      <TextField fx:id="in_type" layoutX="458.0" layoutY="340.0" />
+      <Label layoutX="221.0" layoutY="172.0" text="description exercices">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="224.0" layoutY="110.0" text="nom pack">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font></Label>
+      <Label layoutX="238.0" layoutY="344.0" text="type">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font></Label>
+      <Button fx:id="btn_retour" layoutX="829.0" layoutY="560.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="retour">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btn_valider" layoutX="432.0" layoutY="547.0" mnemonicParsing="false" onAction="#valider" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="valider">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font></Button>
+      <TextArea fx:id="in_idExercice" layoutX="458.0" layoutY="154.0" prefHeight="134.0" prefWidth="200.0" />
+   </children>
+</AnchorPane>

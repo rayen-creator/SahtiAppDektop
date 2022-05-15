@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="528.0" prefWidth="838.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.UserProfile.UserProfileController">
+   <children>
+      <ImageView fitHeight="757.0" fitWidth="927.0" layoutY="-25.0">
+         <image>
+            <Image url="@../../Img/BGIMG_1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="680.0" fitWidth="900.0" layoutX="27.0" layoutY="33.0">
+         <image>
+            <Image url="@../../Img/Rectangle%209.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="idnom" layoutX="303.0" layoutY="225.0" prefHeight="31.0" prefWidth="243.0" promptText="New FirstName" />
+      <TextField fx:id="idprenom" layoutX="301.0" layoutY="268.0" prefHeight="31.0" prefWidth="243.0" promptText="New LastName" />
+      <Button fx:id="idupdateusername" layoutX="380.0" layoutY="478.0" mnemonicParsing="false" onAction="#updateusername" prefHeight="46.0" prefWidth="90.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Update">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font></Button>
+      <Separator layoutX="556.0" layoutY="218.0" orientation="VERTICAL" prefHeight="263.0" prefWidth="15.0" />
+      <Text layoutX="369.0" layoutY="93.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit your profile" wrappingWidth="215.6708984375">
+         <font>
+            <Font name="Trebuchet MS Bold" size="24.0" />
+         </font>
+      </Text>
+      <PasswordField fx:id="idnewpwd" layoutX="612.0" layoutY="309.0" promptText="Password" />
+      <PasswordField fx:id="idconfirmpwd" layoutX="612.0" layoutY="349.0" promptText="Confirm Password" />
+      <Button fx:id="idupdatepwd" layoutX="635.0" layoutY="478.0" mnemonicParsing="false" onAction="#updatepwd" prefHeight="46.0" prefWidth="142.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Update Password">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font></Button>
+      <ImageView fitHeight="111.0" fitWidth="112.0" layoutX="65.0" layoutY="44.0">
+         <image>
+            <Image url="@../../Img/SAHTI%20without%20bg.png" />
+         </image>
+      </ImageView>
+      <PasswordField fx:id="idoldpwd" layoutX="612.0" layoutY="269.0" promptText="Old Password" />
+      <Text layoutX="633.0" layoutY="241.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Password" textAlignment="CENTER" wrappingWidth="153.00001215934753">
+         <font>
+            <Font name="Trebuchet MS Bold" size="18.0" />
+         </font>
+      </Text>
+      <TextArea fx:id="idbio" layoutX="301.0" layoutY="315.0" prefHeight="73.0" prefWidth="243.0" promptText="bio" />
+      <ImageView fx:id="iduploadpic" fitHeight="90.0" fitWidth="132.0" layoutX="110.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="idlabelpic" layoutX="99.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Change Profile picture" textAlignment="CENTER" wrappingWidth="153.00000169873238">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font>
+      </Text>
+      <Button fx:id="idupload" layoutX="132.0" layoutY="373.0" mnemonicParsing="false" onAction="#uploadbtn" prefHeight="38.0" prefWidth="70.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04) linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Upload">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font></Button>
+   </children>
+</AnchorPane>
