@@ -61,53 +61,43 @@
                   <Font name="Trebuchet MS Bold" size="15.0" />
                </font>
             </Button>
-            <Label fx:id="idusername" layoutX="108.0" layoutY="161.0" prefHeight="21.0" prefWidth="101.0" text="Label" textAlignment="RIGHT" />
+            <Label fx:id="idusername" layoutX="90.0" layoutY="161.0" prefHeight="21.0" prefWidth="142.0" text="Label" textAlignment="RIGHT" />
             <Button fx:id="EditProfile" layoutX="29.0" layoutY="190.0" mnemonicParsing="false" onAction="#EditProfile" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #E9CE20, #756710);" text="Edit Profile">
                <font>
                   <Font name="Trebuchet MS Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="30.0" layoutY="348.0" mnemonicParsing="false" onAction="#affEx" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter exercices">
+            <Button layoutX="28.0" layoutY="346.0" mnemonicParsing="false" onAction="#consulterCoach" prefHeight="73.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter coach &amp; nutri">
                <font>
                   <Font name="Trebuchet MS Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="30.0" layoutY="388.0" mnemonicParsing="false" onAction="#consulterNutri" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter nutritionnistes">
+            <Button layoutX="30.0" layoutY="426.0" mnemonicParsing="false" onAction="#consulterCmd" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter commandes">
                <font>
                   <Font name="Trebuchet MS Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="30.0" layoutY="428.0" mnemonicParsing="false" onAction="#consulterCoach" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter entraineurs">
+            <Button layoutX="30.0" layoutY="469.0" mnemonicParsing="false" onAction="#addReclamaiton" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Ajouter réclamation">
                <font>
                   <Font name="Trebuchet MS Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="30.0" layoutY="469.0" mnemonicParsing="false" onAction="#consulterCmd" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter commandes">
+            <Button layoutX="30.0" layoutY="511.0" mnemonicParsing="false" onAction="#consulterRecla" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter réclamations">
                <font>
                   <Font name="Trebuchet MS Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="30.0" layoutY="512.0" mnemonicParsing="false" onAction="#addReclamaiton" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Ajouter réclamation">
+            <Button layoutX="28.0" layoutY="554.0" mnemonicParsing="false" onAction="#consulterMagasin" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter magasin">
                <font>
                   <Font name="Trebuchet MS Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="30.0" layoutY="554.0" mnemonicParsing="false" onAction="#consulterRecla" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter réclamations">
+            <Button layoutX="28.0" layoutY="595.0" mnemonicParsing="false" onAction="#suivreLvr" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Suivre livraison">
                <font>
                   <Font name="Trebuchet MS Bold" size="15.0" />
                </font>
             </Button>
-            <Button layoutX="28.0" layoutY="597.0" mnemonicParsing="false" onAction="#consulterMagasin" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter magasin">
-               <font>
-                  <Font name="Trebuchet MS Bold" size="15.0" />
-               </font>
-            </Button>
-            <Button layoutX="28.0" layoutY="638.0" mnemonicParsing="false" onAction="#suivreLvr" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Suivre livraison">
-               <font>
-                  <Font name="Trebuchet MS Bold" size="15.0" />
-               </font>
-            </Button>
-            <ImageView fx:id="idpicprofil" fitHeight="44.0" fitWidth="53.0" layoutX="53.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true" />
+            <ImageView fx:id="idpicprofil" fitHeight="47.0" fitWidth="71.0" layoutX="14.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true" />
          </children>
       </AnchorPane>
    </children>

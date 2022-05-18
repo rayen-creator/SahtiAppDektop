@@ -5,8 +5,6 @@
  */
 package sahti.services;
 
-
-
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -59,31 +57,36 @@ public class PromotionCRUD {
 
             if (ok == -1) {
                 System.out.println("Insertion failed");
-            } else {
+            }
+            else {
                 System.out.println("Insertion succes ! ");
             }
 
-        } catch (SQLException ex) {
+        }
+        catch (SQLException ex) {
             System.err.println(ex.getMessage());
 
         }
 
     }
 
-    public void supprimerPromotion(Promotion prom) {
+    public void supprimerPromotion(Promotion p) {
         try {
-            String requete = "DELETE FROM promotion  where id_prom=?";
+            String requete = "DELETE FROM promotion  WHERE id_prom=? ";
             PreparedStatement pst = cnx2.prepareStatement(requete);
-            pst.setInt(1, prom.getId_prom());
+            pst.setInt(1, p.getId_prom());
+//            pst.setInt(1, id);
 
             int ok = pst.executeUpdate();
 
-            if (ok == -1) {
-                System.out.println("suppression failed");
-            } else {
+            if (ok != -1) {
                 System.out.println("suppression succes ! ");
             }
-        } catch (SQLException ex) {
+            else {
+                System.out.println("suppression failed");
+            }
+        }
+        catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
 
@@ -108,10 +111,12 @@ public class PromotionCRUD {
 
             if (ok == -1) {
                 System.out.println("update failed");
-            } else {
+            }
+            else {
                 System.out.println("update succes ! ");
             }
-        } catch (SQLException ex) {
+        }
+        catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
     }
@@ -136,7 +141,8 @@ public class PromotionCRUD {
 
             }
 
-        } catch (SQLException ex) {
+        }
+        catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
         return myList;
@@ -145,7 +151,7 @@ public class PromotionCRUD {
 
     public Promotion rechercheUnePromotion(int id) {
         Promotion p = new Promotion();
-        
+
         try {
             String query = "SELECT * FROM promotion WHERE id_prod=? ";
             PreparedStatement pst = cnx2.prepareStatement(query);
@@ -160,7 +166,8 @@ public class PromotionCRUD {
             p.setDescProm(rs.getString("descProm"));
             p.setId_prod(rs.getInt("id_prod"));
 
-        } catch (SQLException ex) {
+        }
+        catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
 
@@ -187,7 +194,8 @@ public class PromotionCRUD {
 
             }
 
-        } catch (SQLException ex) {
+        }
+        catch (SQLException ex) {
             System.err.println(ex.getMessage());
         }
 

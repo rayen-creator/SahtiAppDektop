@@ -116,7 +116,7 @@ public class PanierController implements Initializable {
     
     public void setlblImgView(String path){
        try {
-            Image image = new Image(new FileInputStream("C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\Sahti\\Image\\"+path));
+            Image image = new Image(new FileInputStream("Image\\"+path));
               
         imgView.setImage(image);
         } catch (FileNotFoundException ex) {

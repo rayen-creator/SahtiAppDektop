@@ -167,7 +167,7 @@ public class SignCoachController implements Initializable {
                             try {
                                 BufferedImage bufferedImage = ImageIO.read(fileimg);
                                 //changer path 
-                                File outputfile = new File("C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\src\\sahti\\ProfileIMG\\Coach\\" + file);
+                                File outputfile = new File("src\\sahti\\ProfileIMG\\Coach\\" + file);
                                 //save 
                                 ImageIO.write(bufferedImage, "jpg", outputfile);
                             }

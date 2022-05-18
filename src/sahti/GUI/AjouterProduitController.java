@@ -125,6 +125,7 @@ public class AjouterProduitController implements Initializable {
     private List<String> cat = new ArrayList<>();
     //private String filePath;
     private String path;
+    private String img;
     BufferedImage bufferedImage;
     @FXML
     private TextField txtrecher;
@@ -213,8 +214,8 @@ public class AjouterProduitController implements Initializable {
             File outputfile = new File(path);
             //save 
             ImageIO.write(bufferedImage, "png", outputfile);
-
-            Produit p = new Produit(nom, prix, image, quantite, desc, idcat);
+            
+            Produit p = new Produit(nom, prix, img, quantite, desc, idcat);
 
             pc.ajouterProduit(p);
             tbnom.setCellValueFactory(new PropertyValueFactory<>("nom"));
@@ -261,7 +262,8 @@ public class AjouterProduitController implements Initializable {
                 VImage.setImage(image);
                 String name = file.getName();
                 //changer path 
-                path = "C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\Sahti\\Image\\" + name;
+                path = "Image\\" + name;
+                img= name;
 //                File outputfile = new File(path);
 //                //save 
 //                ImageIO.write(bufferedImage,"png" , outputfile);
@@ -445,7 +447,7 @@ public class AjouterProduitController implements Initializable {
 
         try {
             com.itextpdf.text.Document doc = new com.itextpdf.text.Document();
-            PdfWriter.getInstance(doc, new FileOutputStream("C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\liste.pdf"));
+            PdfWriter.getInstance(doc, new FileOutputStream("liste.pdf"));
             doc.open();
 
             // Image img = Image.getInstance("C:\\Users\\HP\\Documents\\NetBeansProjects\\Sahti\\Evenement.pdf");
@@ -540,7 +542,7 @@ public class AjouterProduitController implements Initializable {
             doc.add(tabpdf);
             JOptionPane.showMessageDialog(null, "Success !!");
             doc.close();
-            Desktop.getDesktop().open(new File("C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\Liste.pdf"));
+            Desktop.getDesktop().open(new File("Liste.pdf"));
         } catch (DocumentException | HeadlessException | IOException e) {
             System.out.println("ERROR PDF");
             System.out.println(Arrays.toString(e.getStackTrace()));

@@ -56,7 +56,7 @@ public class AjouterAvisController implements Initializable {
     public void initialize(URL url, ResourceBundle rb) {
         // TODO
         /*try {
-            Image image = new Image(new FileInputStream("C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\Sahti\\Image\\coach.jpg"));
+            Image image = new Image(new FileInputStream("Image\\coach.jpg"));
               
         imgProduit.setImage(image);
         } catch (FileNotFoundException ex) {

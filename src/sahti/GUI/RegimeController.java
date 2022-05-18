@@ -317,10 +317,10 @@ public class RegimeController implements Initializable {
             MailJava m = new MailJava();
 
             List<String> emails = m.ListEmail();
-            for (int i = 0; i < emails.size(); i++) {
-                MailJava.send("noreplysahti@gmail.com", "rwtlwppcxycwhwfa", emails.get(i), "Notification regime ", "votre regime a été affecté avec succes !");
-
-            }
+//            for (int i = 0; i < emails.size(); i++) {
+//                MailJava.send("noreplysahti@gmail.com", "rwtlwppcxycwhwfa", emails.get(i), "Notification regime ", "votre regime a été affecté avec succes !");
+//
+//            }
 
 //            try {
 //                String query = "SELECT m.email from nutritionniste m,regime r where r.id_specialiste= m.id  and r.id_specialiste=?";

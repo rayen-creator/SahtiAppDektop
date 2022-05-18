@@ -26,7 +26,7 @@ public class MyConnection {
     public MyConnection() {
         try {
 //            cnx = DriverManager.getConnection(url, login, pwd);
-            cnx = DriverManager.getConnection("jdbc:mysql://localhost:3306/sahti", login, pwd);
+            cnx = DriverManager.getConnection("jdbc:mysql://localhost:3307/sahti", login, pwd);
             System.out.println("Connexion établie!");
         }
         catch (SQLException ex) {

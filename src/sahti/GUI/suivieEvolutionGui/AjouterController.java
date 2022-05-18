@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package suivieEvolutionGui;
+package sahti.GUI.suivieEvolutionGui;
+
 
 
 import entities.SuivieEvolution;
@@ -20,8 +21,8 @@ import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javax.swing.JOptionPane;
-
 import services.SuivieEvolutionCRUD;
+
 
 /**
  * FXML Controller class

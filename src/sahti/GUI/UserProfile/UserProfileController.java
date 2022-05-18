@@ -143,7 +143,7 @@ public class UserProfileController implements Initializable {
                     try {
                         BufferedImage bufferedImage = ImageIO.read(fileimg);
                         //changer path 
-                        File outputfile = new File("C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\src\\sahti\\ProfileIMG\\Client\\" + fileimg.getName());
+                        File outputfile = new File("src\\sahti\\ProfileIMG\\Client\\" + fileimg.getName());
                         //save 
                         ImageIO.write(bufferedImage, "jpg", outputfile);
                     }
@@ -163,7 +163,7 @@ public class UserProfileController implements Initializable {
 //                idusernamelabel.setMaxWidth(Double.MAX_VALUE);
 //                idusernamelabel.setAlignment(Pos.CENTER_RIGHT);
 //
-//                Image image = new Image("file:" + "C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\src\\sahti\\ProfileIMG\\Client\\" + a.searchImgClient(Login.emailUser));
+//                Image image = new Image("file:" + "src\\sahti\\ProfileIMG\\Client\\" + a.searchImgClient(Login.emailUser));
 //                idpicprofil.setImage(image);
                 //*****************
                 idnom.setText("");
@@ -182,7 +182,7 @@ public class UserProfileController implements Initializable {
                     try {
                         BufferedImage bufferedImage = ImageIO.read(fileimg);
                         //changer path 
-                        File outputfile = new File("C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\src\\sahti\\ProfileIMG\\Coach\\" + fileimg.getName());
+                        File outputfile = new File("src\\sahti\\ProfileIMG\\Coach\\" + fileimg.getName());
                         //save 
                         ImageIO.write(bufferedImage, "jpg", outputfile);
                     }
@@ -198,7 +198,7 @@ public class UserProfileController implements Initializable {
                 idusernamelabel.setAlignment(Pos.CENTER_RIGHT);
 
                 ImageView myImageView = new ImageView();
-                Image image = new Image("file:" + "C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\src\\sahti\\ProfileIMG\\Coach\\" + a.searchImgCoach(Login.emailUser));
+                Image image = new Image("file:" + "src\\sahti\\ProfileIMG\\Coach\\" + a.searchImgCoach(Login.emailUser));
                 idpicprofil.setImage(image);
                 //************
                 idnom.setText("");
@@ -218,7 +218,7 @@ public class UserProfileController implements Initializable {
                     try {
                         BufferedImage bufferedImage = ImageIO.read(fileimg);
                         //changer path 
-                        File outputfile = new File("C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\src\\sahti\\ProfileIMG\\Nutri\\" + fileimg.getName());
+                        File outputfile = new File("src\\sahti\\ProfileIMG\\Nutri\\" + fileimg.getName());
                         //save 
                         ImageIO.write(bufferedImage, "jpg", outputfile);
                     }
@@ -235,7 +235,7 @@ public class UserProfileController implements Initializable {
 //                idusernamelabel.setMaxWidth(Double.MAX_VALUE);
 //                idusernamelabel.setAlignment(Pos.CENTER_RIGHT);
 //
-//                Image image = new Image("file:" + "C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\src\\sahti\\ProfileIMG\\Nutri\\" + a.searchImgNutri(Login.emailUser));
+//                Image image = new Image("file:" + "src\\sahti\\ProfileIMG\\Nutri\\" + a.searchImgNutri(Login.emailUser));
 //                idpicprofil.setImage(image);
                 //**************
                 idnom.setText("");

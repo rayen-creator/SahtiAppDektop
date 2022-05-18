@@ -33,8 +33,8 @@ import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
 import javafx.stage.Stage;
 import sahti.entities.Reclamation;
+import sahti.services.Login;
 import sahti.services.ReclamationCRUD;
-
 
 /**
  * FXML Controller class
@@ -66,39 +66,56 @@ public class AfficherReclamationController implements Initializable {
     @FXML
     private TextField txtComment;
     Alert confirmation = new Alert(Alert.AlertType.CONFIRMATION);
+
     /**
      * Initializes the controller class.
+     *
      * @param url
      * @param rb
      */
     @Override
-    public void initialize(URL url, ResourceBundle rb) {        
-      
+    public void initialize(URL url, ResourceBundle rb) {
+        Login l = new Login();
+
+        if (l.loginAdmin(Login.emailUser, Login.pwduser)) {
+            btnValider.setVisible(true);
+        }
+        else {
+            btnValider.setVisible(false);
+        }
+
     }
-    public void setlblNumReclamation(String message){
+
+    public void setlblNumReclamation(String message) {
         this.lblNumReclamation.setText(message);
     }
-    public void setlblTitre(String message){
+
+    public void setlblTitre(String message) {
         this.lblTitre.setText(message);
     }
-    public void setlblType(String message){
+
+    public void setlblType(String message) {
         this.lblType.setText(message);
     }
-    public void setlblDateReclamation(Date date){
+
+    public void setlblDateReclamation(Date date) {
         this.lblDateReclamation.setText(date.toString());
     }
-    public void settxtMessage(String message){
+
+    public void settxtMessage(String message) {
         this.txtaMessage.setText(message);
     }
-    public void setImageReclamation(String filename){
+
+    public void setImageReclamation(String filename) {
         try {
-            Image image = new Image(new FileInputStream("C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\applicationSahti-Finalmain\\Image\\"+filename));
-              
-        viewPiecejointe.setImage(image);
-        } catch (FileNotFoundException ex) {
+            Image image = new Image(new FileInputStream("Image\\" + filename));
+
+            viewPiecejointe.setImage(image);
+        }
+        catch (FileNotFoundException ex) {
             System.out.println(ex.getMessage());
         }
-        
+
     }
     //public void setId
 
@@ -112,7 +129,7 @@ public class AfficherReclamationController implements Initializable {
         String comment = txtComment.getText();
         List<String> aList = new ArrayList<>();
         aList.add(t);
-        aList.add("\n"+user+":\n"+comment);
+        aList.add("\n" + user + ":\n" + comment);
         System.out.println(aList);
         StringBuilder listText = new StringBuilder();
         for (String s : aList) {
@@ -120,8 +137,8 @@ public class AfficherReclamationController implements Initializable {
             txtaMessage.setText(message);
 
         }
-        
-        rc.envoyerCommentaire(numReclamation, comment,message);
+
+        rc.envoyerCommentaire(numReclamation, comment, message);
         txtComment.setText("");
     }
 
@@ -135,13 +152,13 @@ public class AfficherReclamationController implements Initializable {
         confirmation.setTitle("Cloturer reclamation");
         // Header Text: null
         confirmation.setHeaderText(null);
-        confirmation.setContentText("Voulez vous vraiment cloturer la reclamation "+lblNumReclamation.getText()+"!");        
-        Reclamation r= new Reclamation(lblNumReclamation.getText(),true);
+        confirmation.setContentText("Voulez vous vraiment cloturer la reclamation " + lblNumReclamation.getText() + "!");
+        Reclamation r = new Reclamation(lblNumReclamation.getText(), true);
         modification = confirmation.showAndWait();
-         if (modification.get() == ButtonType.OK) {
+        if (modification.get() == ButtonType.OK) {
             ReclamationCRUD rc = new ReclamationCRUD();
             rc.cloturerReclamation(r);
-         }
+        }
         FXMLLoader loader = new FXMLLoader(getClass().getResource("AfficherReclamations.fxml"));
         try {
             Stage primaryStage = new Stage();
@@ -154,11 +171,10 @@ public class AfficherReclamationController implements Initializable {
             primaryStage.setScene(scene);
             primaryStage.show();
 
-            
-        } catch (IOException ex) {
+        }
+        catch (IOException ex) {
             System.out.println(ex.getMessage());
         }
 
-        
     }
 }

@@ -135,7 +135,7 @@ public class AjouterPromotionController implements Initializable {
                 imgV.setImage(image);
                 String name = file.getName();
                 //changer path 
-                path = "C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\Image\\" + name;
+                path = "Image\\" + name;
 //                File outputfile = new File(path);
 //                //save 
 //                ImageIO.write(bufferedImage,"png" , outputfile);
@@ -332,9 +332,9 @@ public class AjouterPromotionController implements Initializable {
             ObservableList<Promotion> list = se.affichePromotion();
             tablePro.setItems(list);
 
-            JOptionPane.showMessageDialog(null, " PRODUIT SUPPRIME ");
+            JOptionPane.showMessageDialog(null, " PROMOTION SUPPRIME ");
         } else {
-            JOptionPane.showMessageDialog(null, " PRODUIT NON SUPPRIME ");
+            JOptionPane.showMessageDialog(null, " PROMOTION NON SUPPRIME ");
         }
 
     }

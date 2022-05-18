@@ -6,8 +6,10 @@
 package sahti.GUI.suivieEvolutionGui;
 
 
-import entities.EncapsulationSuivieEvolution;
 
+
+
+import entities.EncapsulationSuivieEvolution;
 import entities.SuivieEvolution;
 import java.io.IOException;
 import java.net.URL;

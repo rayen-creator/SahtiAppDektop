@@ -53,17 +53,12 @@
          <font>
             <Font name="Trebuchet MS Bold" size="15.0" />
          </font></Button>
-      <Button fx:id="logout" layoutX="134.0" layoutY="190.0" mnemonicParsing="false" onAction="#idlogout" prefHeight="31.0" prefWidth="80.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #E9CE20, #756710);" text="Logout">
+      <Button fx:id="logout" layoutX="42.0" layoutY="190.0" mnemonicParsing="false" onAction="#idlogout" prefHeight="31.0" prefWidth="172.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #E9CE20, #756710);" text="Logout">
          <font>
             <Font name="Trebuchet MS Bold" size="15.0" />
          </font>
       </Button>
       <Label fx:id="idusername" layoutX="82.0" layoutY="161.0" prefHeight="21.0" prefWidth="101.0" text="Label" textAlignment="RIGHT" />
-      <Button fx:id="EditProfile" layoutX="29.0" layoutY="190.0" mnemonicParsing="false" onAction="#EditProfile" prefHeight="31.0" prefWidth="101.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #E9CE20, #756710);" text="Edit Profile">
-         <font>
-            <Font name="Trebuchet MS Bold" size="15.0" />
-         </font>
-      </Button>
       <Button layoutX="30.0" layoutY="348.0" mnemonicParsing="false" onAction="#gererProd" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Gestion des produits">
          <font>
             <Font name="Trebuchet MS Bold" size="15.0" />
@@ -74,27 +69,22 @@
             <Font name="Trebuchet MS Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="31.0" layoutY="430.0" mnemonicParsing="false" onAction="#addReclamation" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Ajouter réclamation">
+      <Button layoutX="31.0" layoutY="431.0" mnemonicParsing="false" onAction="#consulterReclamation" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consoluter réclamation">
          <font>
             <Font name="Trebuchet MS Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="31.0" layoutY="473.0" mnemonicParsing="false" onAction="#consulterReclamation" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consoluter réclamation">
+      <Button layoutX="31.0" layoutY="473.0" mnemonicParsing="false" onAction="#consulterAvis" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter avis">
          <font>
             <Font name="Trebuchet MS Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="31.0" layoutY="515.0" mnemonicParsing="false" onAction="#consulterAvis" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Consulter avis">
+      <Button layoutX="29.0" layoutY="516.0" mnemonicParsing="false" onAction="#listCmd" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Liste des commandes">
          <font>
             <Font name="Trebuchet MS Bold" size="15.0" />
          </font>
       </Button>
-      <Button layoutX="29.0" layoutY="558.0" mnemonicParsing="false" onAction="#listCmd" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Liste des commandes">
-         <font>
-            <Font name="Trebuchet MS Bold" size="15.0" />
-         </font>
-      </Button>
-      <Button layoutX="29.0" layoutY="599.0" mnemonicParsing="false" onAction="#listLvr" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Liste des livraisons">
+      <Button layoutX="29.0" layoutY="557.0" mnemonicParsing="false" onAction="#listLvr" prefHeight="31.0" prefWidth="202.0" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="Liste des livraisons">
          <font>
             <Font name="Trebuchet MS Bold" size="15.0" />
          </font>

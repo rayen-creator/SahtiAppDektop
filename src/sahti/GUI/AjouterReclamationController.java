@@ -149,7 +149,7 @@ public class AjouterReclamationController implements Initializable {
             BufferedImage bufferedImage = ImageIO.read(file);
             
             filename = file.getName();
-            String path = "C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\applicationSahti-Finalmain\\Image\\" + filename;
+            String path = "Image\\" + filename;
              File outputfile = new File(path);
                 //save
             ImageIO.write(bufferedImage,"png" , outputfile);

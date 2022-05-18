@@ -3,7 +3,8 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package suivieEvolutionGui;
+package sahti.GUI.suivieEvolutionGui;
+
 
 import entities.EncapsulationSuivieEvolution;
 import entities.SuivieEvolution;

@@ -10,25 +10,27 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="suivieEvolutionGui.AfficherController">
+<AnchorPane id="AnchorPane" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sahti.GUI.suivieEvolutionGui.AfficherController">
    <children>
       <ImageView fitHeight="600.0" fitWidth="900.0">
          <image>
             <Image url="@../Img/BGIMG_Abdo.png" />
          </image>
       </ImageView>
-      <ImageView fitHeight="600.0" fitWidth="900.0">
-         <image>
-            <Image url="file:/D:/PIjava/PIAbdou/Img/BGIMG_Abdo.png" />
-         </image>
-      </ImageView>
-      <Button fx:id="btn_retour" layoutX="837.0" layoutY="560.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: #92FC07;" text="retour" />
-      <Button fx:id="btn_ajouter" layoutX="435.0" layoutY="560.0" mnemonicParsing="false" onAction="#ajouter" style="-fx-background-color: #92FC07;" text="ajouter">
+      <ImageView fitHeight="600.0" fitWidth="900.0" />
+      <Button fx:id="btn_retour" layoutX="837.0" layoutY="560.0" mnemonicParsing="false" onAction="#retour" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="retour">
          <font>
-            <Font name="Trebuchet MS" size="12.0" />
+            <Font name="Trebuchet MS Bold" size="14.0" />
+         </font></Button>
+      <Button fx:id="btn_ajouter" layoutX="435.0" layoutY="560.0" mnemonicParsing="false" onAction="#ajouter" style="-fx-background-color: linear-gradient(from 25% 25% to 100% 100%, #92FC07, #497E04);" text="ajouter">
+         <font>
+            <Font name="Trebuchet MS Bold" size="14.0" />
          </font></Button>
       <TextField fx:id="in_search" layoutX="108.0" layoutY="15.0" />
-      <Label layoutX="29.0" layoutY="19.0" text="rechercher:" />
+      <Label layoutX="20.0" layoutY="19.0" text="rechercher:">
+         <font>
+            <Font name="Trebuchet MS Bold" size="15.0" />
+         </font></Label>
       <TableView fx:id="table" layoutX="20.0" layoutY="50.0" prefHeight="484.0" prefWidth="833.0" style="-fx-background-color: #92FC07;">
         <columns>
           <TableColumn fx:id="cl_id" minWidth="0.0" prefWidth="0.0" text="id" />

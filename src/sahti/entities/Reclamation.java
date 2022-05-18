@@ -48,8 +48,7 @@ public class Reclamation {
         this.id = id;
     }
 
-    public Reclamation(int idUser, String titre, String message, String type, String image) {
-        this.idUser = idUser;
+    public Reclamation( String titre, String message, String type, String image) {
         this.titre = titre;
         this.message = message;
         this.type = type;
@@ -61,13 +60,7 @@ public class Reclamation {
         this.cloturer = cloturer;
     }
 
-    public Reclamation(String numReclamation, String titre, String message, String type) {
-        this.numReclamation = numReclamation;
-        this.titre = titre;
-        this.message = message;
-        this.type = type;
-    }
-    
+   
 
     public int getId() {
         return id;

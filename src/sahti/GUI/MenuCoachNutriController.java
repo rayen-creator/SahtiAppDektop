@@ -77,7 +77,7 @@ public class MenuCoachNutriController implements Initializable {
             idusername.setAlignment(Pos.CENTER_LEFT);
 
             ImageView myImageView = new ImageView();
-            Image image = new Image("file:" + "C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\src\\sahti\\ProfileIMG\\Coach\\" + a.searchImgCoach(Login.emailUser));
+            Image image = new Image("file:" + "src\\sahti\\ProfileIMG\\Coach\\" + a.searchImgCoach(Login.emailUser));
             idpicprofil.setImage(image);
             //hide button
             idregime.setVisible(false);
@@ -93,7 +93,7 @@ public class MenuCoachNutriController implements Initializable {
             idusername.setAlignment(Pos.CENTER_LEFT);
 
             ImageView myImageView = new ImageView();
-            Image image = new Image("file:" + "C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\src\\sahti\\ProfileIMG\\Nutri\\" + a.searchImgNutri(Login.emailUser));
+            Image image = new Image("file:" + "src\\sahti\\ProfileIMG\\Nutri\\" + a.searchImgNutri(Login.emailUser));
             idpicprofil.setImage(image);
             //hide button
             idclientcoach.setVisible(false);

@@ -120,7 +120,7 @@ public class AjouterCategorieController implements Initializable {
                 VImage.setImage(image);
                 String name = file.getName();
                 //changer path 
-                path = "C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\Image\\" + name;
+                path = "Image\\" + name;
 //                File outputfile = new File(path);
 //                //save 
 //                ImageIO.write(bufferedImage,"png" , outputfile);

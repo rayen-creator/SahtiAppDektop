@@ -83,7 +83,7 @@ public class MenuController implements Initializable {
 //            idusername.setAlignment(Pos.CENTER_LEFT);
 //
 //            ImageView myImageView = new ImageView();
-//            Image image = new Image("file:" + "C:\\Users\\Akrimi\\Documents\\NetBeansProjects\\sahti\\src\\sahti\\img\\" + a.searchImgCoach(Login.emailUser));
+//            Image image = new Image("file:" + "src\\sahti\\img\\" + a.searchImgCoach(Login.emailUser));
 //            idpicprofil.setImage(image);
 //
 //        }

@@ -49,7 +49,7 @@ public class RegimeCRUD implements InterfaceRegime {
             try {
                 Statement stm = connexion.createStatement();
                 String query = "INSERT INTO `regime`(`id_regime`,id_specialiste, `objectif`, `date_debut`, `duree`, `max_calories`, `nb_repas`, `image`)"
-                        + " VALUES (" + r.getId_regime() + ",'" + id + "','" + r.getObjectif() + "','" + r.getDate_debut() + "'," + r.getDuree() + "," + r.getMax_calories() + ","
+                        + " VALUES (" + r.getId_regime() + "," + id + ",'" + r.getObjectif() + "','" + r.getDate_debut() + "'," + r.getDuree() + "," + r.getMax_calories() + ","
                         + r.getNb_repas() + ",'" + r.getImage() + "')";
                 stm.executeUpdate(query);
             } catch (SQLException ex) {
