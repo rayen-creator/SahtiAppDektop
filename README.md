@@ -50,7 +50,7 @@ To get a local copy up and running follow these simple example steps.
 
 You may find below the list of things you need to use this project :
 * Make sure mysql is running on your system.
-* You will need to install the "jdk 8" command line.
+* You will need to install the "jdk 8" .
 
 ### 🛠 Installation
 
