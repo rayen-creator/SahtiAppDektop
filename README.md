@@ -2,10 +2,10 @@
  
 
   
- <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/rayen-creator/SahtiAPPWeb">
-<img alt="GitHub forks" src="https://img.shields.io/github/forks/rayen-creator/SahtiAPPWeb">
+ <img alt="GitHub contributors" src="https://img.shields.io/github/contributors/rayen-creator/SahtiAppDektop">
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/rayen-creator/SahtiAppDektop">
  
-<h3 align="center">SAHTI web app</h3>
+<h3 align="center">SAHTI Desktop app</h3>
 <img alt="logo" src="https://github.com/rayen-creator/SahtiAPPWeb/blob/main/SAHTI_without_bg.png" />
   
   <p align="center">
