@@ -33,7 +33,7 @@ Sahti is a cross platform app designed to help people attend coaching course onl
 
 
   <div align="center">
-<a href="https://symfony.com/" title="Symfony"><img src="https://github.com/get-icon/geticon/raw/master/icons/symfony.svg" alt="Symfony" width="100px" height="100px"></a>
+<a href="https://www.java.com/" title="Java"><img src="https://github.com/get-icon/geticon/raw/master/icons/java.svg" alt="Java"  width="100px" height="100px"></a>
 <a href="https://dev.mysql.com/" title="MySQL"><img src="https://github.com/get-icon/geticon/raw/master/icons/mysql.svg" alt="MySQL" width="100px" height="100px"></a>
 
   </div>
